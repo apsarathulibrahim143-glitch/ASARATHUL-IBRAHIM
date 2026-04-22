@@ -281,46 +281,7 @@
       from { transform: rotate(0deg); }
       to { transform: rotate(360deg); }
     }
-    .galaxy {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  background: transparent;
-  overflow: hidden;
-}
-
-/* small stars */
-.galaxy::before {
-  content: "";
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  background-image: radial-gradient(white 1px, transparent 1px);
-  background-size: 40px 40px;
-  animation: moveStars 60s linear infinite;
-  opacity: 0.4;
-}
-
-/* big glowing stars */
-.galaxy::after {
-  content: "";
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  background-image: radial-gradient(#00f7ff 2px, transparent 2px);
-  background-size: 12000px 12000px;
-  animation: moveStars 120s linear infinite;
-  opacity: 0.6;
-}
-  @keyframes moveStars {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-1000px);
-  }
-}
+    
 .shooting-star {
   position: absolute;
   top: 20%;
@@ -653,12 +614,8 @@
   
   
    <!-- Right: Earth Animation + Name -->
-    <div class="hero-earth">
-    <div class="galaxy"></div>
-    <div class="shooting-star"></div>
+    <div class="hero-earth"></div>
     <div class="mouse-glow"></div>
-    <span></span>
-    </div>
         <div class="earth-container">
     <div class="earth">
       <img src="D:\work file\earth.jpeg" alt="Earth">
